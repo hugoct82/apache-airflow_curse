@@ -18,6 +18,7 @@ PATH_TO_PYTHON_BINARY = sys.executable
 with DAG(
     dag_id="example_python_and_pandas",
     schedule=None,
+    start_date=pendulum.now(),
     tags=["example"],
 ) as dag:
 
